@@ -32,7 +32,7 @@ export class PullRequestTemplate extends TextFile {
   }
 
   constructor(github: GitHub, options: PullRequestTemplateOptions = {}) {
-    super(github.project, ".github/pull_request_template.md", {
+    super(github.project, ".github/PULL_REQUEST_TEMPLATE.md", {
       lines:
         options.lines && options.lines?.length > 0
           ? options.lines
