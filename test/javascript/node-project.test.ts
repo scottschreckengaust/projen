@@ -984,7 +984,7 @@ test("githubOptions.workflows:false disables github workflows but not github int
   const output = synthSnapshot(project);
   expect(
     Object.keys(output).filter((p) => p.startsWith(".github/"))
-  ).toStrictEqual([".github/pull_request_template.md"]);
+  ).toStrictEqual([".github/PULL_REQUEST_TEMPLATE.md"]);
 });
 
 test("using GitHub npm registry will default npm secret to GITHUB_TOKEN", () => {
