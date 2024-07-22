@@ -91,8 +91,8 @@ describe("contributor statement", () => {
 
     // THEN
     const snapshot = synthSnapshot(project);
-    expect(snapshot[".github/pull_request_template.md"]).toMatchSnapshot();
-    expect(snapshot[".github/pull_request_template.md"]).toContain(
+    expect(snapshot[".github/PULL_REQUEST_TEMPLATE.md"]).toMatchSnapshot();
+    expect(snapshot[".github/PULL_REQUEST_TEMPLATE.md"]).toContain(
       contributorStatement
     );
   });
@@ -112,9 +112,9 @@ describe("contributor statement", () => {
 
     // THEN
     const snapshot = synthSnapshot(project);
-    expect(snapshot[".github/pull_request_template.md"]).toMatchSnapshot();
-    expect(snapshot[".github/pull_request_template.md"]).toContain("Foobar #");
-    expect(snapshot[".github/pull_request_template.md"]).toContain(
+    expect(snapshot[".github/PULL_REQUEST_TEMPLATE.md"]).toMatchSnapshot();
+    expect(snapshot[".github/PULL_REQUEST_TEMPLATE.md"]).toContain("Foobar #");
+    expect(snapshot[".github/PULL_REQUEST_TEMPLATE.md"]).toContain(
       contributorStatement
     );
   });
