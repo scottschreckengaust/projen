@@ -208,7 +208,7 @@ export class MyMicroserviceProject extends TypeScriptProject {
 But if we tried running this code, it would fail to synthesize with the following error:
 
 ```text
-Error: There is already a file under .github/pull_request_template.md
+Error: There is already a file under .github/PULL_REQUEST_TEMPLATE.md
 ```
 
 This happens because the base project, `TypeScriptProject`, already defines a PR template.
@@ -326,7 +326,7 @@ describe('MyMicroserviceProject', () => {
     const snapshot = synthSnapshot(project);
 
     // THEN
-    expect(snapshot['.github/pull_request_template.md']).toBe(
+    expect(snapshot['.github/PULL_REQUEST_TEMPLATE.md']).toBe(
       [
         '### What does this PR change?',
         '<!--- Describe your changes in detail -->',
@@ -359,7 +359,7 @@ describe('MyMicroserviceProject', () => {
     const snapshot = synthSnapshot(project);
 
     // THEN
-    expect(snapshot['.github/pull_request_template.md']).toBe(
+    expect(snapshot['.github/PULL_REQUEST_TEMPLATE.md']).toBe(
       [
         '### What does this PR change?',
         '<!--- Describe your changes in detail -->',
@@ -393,7 +393,7 @@ describe('MyMicroserviceProject', () => {
     const snapshot = synthSnapshot(project);
 
     // THEN
-    expect(snapshot['.github/pull_request_template.md']).toBe(
+    expect(snapshot['.github/PULL_REQUEST_TEMPLATE.md']).toBe(
       [
         '### What does this PR change?',
         '<!--- Describe your changes in detail -->',
